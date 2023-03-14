@@ -20,8 +20,8 @@ const Card = ({ title, release_date, id, poster_path }) => {
       <img
         src={
           poster_path
-            ? `${import.meta.env.VITE_APP_POSTAR_IMG_TWO}${poster_path}`
-            : `${import.meta.env.VITE_APP_UNAVAILABLE_IMG}`
+            ? `https://image.tmdb.org/t/p/w300${poster_path}`
+            : `https://www.movienewz.com/img/films/poster-holder.jpg`
         }
         alt="Moive Poster"
       />

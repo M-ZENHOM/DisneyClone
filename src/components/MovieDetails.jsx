@@ -5,9 +5,7 @@ const MovieDetails = ({ singalMoive }) => {
     <div
       className="relative w-full h-[100vh] bg-cover bg-no-repeat overflow-hidden"
       style={{
-        backgroundImage: `url(${import.meta.env.VITE_APP_BG_IMG}${
-          singalMoive.backdrop_path
-        })`,
+        backgroundImage: `https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces${singalMoive.backdrop_path})`,
       }}
     >
       <div className="w-full h-full absolute top-0 bg-[#0000005e] text-white">

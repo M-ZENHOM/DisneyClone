@@ -6,9 +6,7 @@ export const fetchMovies = createAsyncThunk(
     const { rejectWithValue } = thunkAPI;
     try {
       const res = await fetch(
-        `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${
-          import.meta.env.VITE_APP_API_KEY
-        }&page=${page}&language=en-US&vote_count.gte=10`
+        `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=$17ea84198119ca8fa79af86fc84ae662&page=${page}&language=en-US&vote_count.gte=10`
       );
       const data = await res.json();
       return data.results;
@@ -23,9 +21,7 @@ export const fetchMoivebyID = createAsyncThunk(
     const { rejectWithValue } = thunkAPI;
     try {
       const res = await fetch(
-        `https://api.themoviedb.org/3/movie/${id}?api_key=${
-          import.meta.env.VITE_APP_API_KEY
-        }`
+        `https://api.themoviedb.org/3/movie/${id}?api_key=17ea84198119ca8fa79af86fc84ae662`
       );
       const data = await res.json();
       return data;
