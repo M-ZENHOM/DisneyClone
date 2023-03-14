@@ -6,7 +6,7 @@ export const fetchMovies = createAsyncThunk(
     const { rejectWithValue } = thunkAPI;
     try {
       const res = await fetch(
-        `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=$17ea84198119ca8fa79af86fc84ae662&page=${page}&language=en-US&vote_count.gte=10`
+        `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=17ea84198119ca8fa79af86fc84ae662&page=${page}&language=en-US&vote_count.gte=10`
       );
       const data = await res.json();
       return data.results;
