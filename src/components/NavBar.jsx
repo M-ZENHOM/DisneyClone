@@ -10,7 +10,7 @@ const NavBar = () => {
   return (
     <div
       className={`w-full h-[8vh] ${
-        name ? "bg-[#1f2230] fixed top-0 z-10" : "bg-[#090b138a]"
+        name ? "bg-[#1f2230] fixed top-0 z-50" : "bg-[#090b138a]"
       }  z-5 md:h-[11vh] `}
     >
       <div className="w-5/6 h-full mx-auto flex justify-between items-center text-white">
