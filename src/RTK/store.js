@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import moiveSlice from "../../../movies-app/src/RTK/slices/moiveSlice";
+import moiveSlice from "./slices/moviesSlice";
 import userSlice from "./slices/userSlice";
 
 const store = configureStore({
